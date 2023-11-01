@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+<script> // here is my function 
+    function pluralize(word) {
+            if (word === "moose") {
+                return "moose";
+            } else if (word === "automaton") {
+                return "automata";
+            } else if (word === "mouse") {
+                return "mice";
+            } else {
+                return word + "s";
+            }
+        }
+
+        function pluralizeWord() {
+            const userInput = prompt("Word please:");
+            const pluralizedWord = pluralize(userInput);
+            console.log(pluralizedWord);
+        }
+
+        pluralizeWord();
+        </script>
+</body>
+</html>
